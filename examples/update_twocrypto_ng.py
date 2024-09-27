@@ -7,7 +7,7 @@ from curve_dao import create_vote, get_address, simulate
 from curve_dao.proposals import update_twocrypto_ng
 
 # Load environment variables and fork the Ethereum mainnet
-boa.env.fork(os.getenv("RPC_ETHEREUM"))
+boa.fork(os.getenv("RPC_ETHEREUM"))
 
 # Set up constants
 VOTE_CREATOR_SIM = "0xE6DA683076b7eD6ce7eC972f21Eb8F91e9137a17"
