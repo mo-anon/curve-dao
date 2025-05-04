@@ -35,6 +35,8 @@ def create_vote(
     if not is_simulation:
         vote_description_data = f"ipfs:{pin_to_ipfs(description, pinata_token)}"
 
+    print(f"vote_description_data: {vote_description_data}")
+
     voting = boa.from_etherscan(
         get_dao_parameters(dao)["voting"],
         name="AragonVoting",
